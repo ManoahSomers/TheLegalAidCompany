@@ -1,7 +1,6 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.5.33516.290
+# Visual Studio Version 18
+VisualStudioVersion = 18.7.11919.86 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLA.WebAPI", "TLA.WebAPI\TLA.WebAPI.csproj", "{94D69565-82C1-473A-AF1C-DC00035FEE2C}"
 EndProject
@@ -12,6 +11,17 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLA.DomainAPI.UnitTests", "TLA.DomainAPI.UnitTests\TLA.DomainAPI.UnitTests.csproj", "{C58C6F2D-49AE-499D-BD44-FF3BDD2E8843}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLA.ServiceAdapter.UnitTests", "TLA.ServiceAdapter.UnitTests\TLA.ServiceAdapter.UnitTests.csproj", "{E2B7C4A1-9D3F-4C2A-8B6E-1F0A2C3D4E5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLA.ServiceAdapter.Cases", "TLA.ServiceAdapter.Cases\TLA.ServiceAdapter.Cases.csproj", "{ADA84052-B819-B84B-FD89-697A663E3005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLA.ServiceAdapter.CRM", "TLA.ServiceAdapter.CRM\TLA.ServiceAdapter.CRM.csproj", "{4A3DAF60-54A2-3B41-F0DA-BF0D6D2C80B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLA.Common", "TLA.Common\TLA.Common.csproj", "{17FEA100-78A2-DBA6-A803-BBDEA3C3BB53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AEB77E08-3B96-4DFA-81E5-3B8B0950D920}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\README.md = ..\..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +49,18 @@ Global
 		{E2B7C4A1-9D3F-4C2A-8B6E-1F0A2C3D4E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2B7C4A1-9D3F-4C2A-8B6E-1F0A2C3D4E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2B7C4A1-9D3F-4C2A-8B6E-1F0A2C3D4E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADA84052-B819-B84B-FD89-697A663E3005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA84052-B819-B84B-FD89-697A663E3005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA84052-B819-B84B-FD89-697A663E3005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA84052-B819-B84B-FD89-697A663E3005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A3DAF60-54A2-3B41-F0DA-BF0D6D2C80B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A3DAF60-54A2-3B41-F0DA-BF0D6D2C80B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A3DAF60-54A2-3B41-F0DA-BF0D6D2C80B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A3DAF60-54A2-3B41-F0DA-BF0D6D2C80B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17FEA100-78A2-DBA6-A803-BBDEA3C3BB53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FEA100-78A2-DBA6-A803-BBDEA3C3BB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FEA100-78A2-DBA6-A803-BBDEA3C3BB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FEA100-78A2-DBA6-A803-BBDEA3C3BB53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

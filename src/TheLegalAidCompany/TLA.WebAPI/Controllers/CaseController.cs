@@ -34,9 +34,9 @@ public sealed class CaseController(
         caseDomain.AddCase(domainRequest);
     }
 
-    [HttpPost(nameof(DecideCase))]
-    public void DecideCase(DecideCoverageRequest request)
+    [HttpPost(nameof(UpdateCoverage))]
+    public void UpdateCoverage(UpdateCoverageRequest request)
     {
-        caseDomain.DecideCoverage(request.CaseName, (DomainModel.CoverageStatus)request.Decision);
+        caseDomain.UpdateCoverage(request.CaseName, (DomainModel.CoverageStatus)request.Decision);
     }
 }

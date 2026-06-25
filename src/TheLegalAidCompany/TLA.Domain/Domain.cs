@@ -21,12 +21,7 @@ public sealed class Domain(
         caseProvider.AddCase(legalCase);
     }
 
-    public IEnumerable<ContractDisputeCase> GetDutchContractDisputeCases()
-    {
-        return caseProvider.GetDutchContractDisputeCases();
-    }
-
-    public void DecideCoverage(string caseName, CoverageStatus decision)
+    public void UpdateCoverage(string caseName, CoverageStatus decision)
     {
         caseProvider.UpdateCoverage(caseName, decision);
     }
