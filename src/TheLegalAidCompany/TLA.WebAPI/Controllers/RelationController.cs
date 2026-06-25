@@ -37,7 +37,7 @@ public sealed class RelationController(IDomain domain) : ControllerBase
             RelationId = policy.RelationId,
             StartDate = policy.StartDate,
             EndDate = policy.EndDate,
-            Coverage = policy.Coverage.ToString()
+            CoverageType = policy.CoverageType.ToString()
         };
     }
 }

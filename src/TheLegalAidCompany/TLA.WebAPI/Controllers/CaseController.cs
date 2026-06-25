@@ -30,8 +30,7 @@ public sealed class CaseController(
     [HttpPost(nameof(AddCase))]
     public void AddCase(AddCaseRequest request)
     {
-        var domainRequest = AddCaseRequestMapper.Map(request);
-        caseDomain.AddCase(domainRequest);
+
     }
 
     [HttpPost(nameof(UpdateCoverage))]
