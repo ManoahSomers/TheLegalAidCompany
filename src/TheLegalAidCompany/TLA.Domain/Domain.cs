@@ -16,17 +16,14 @@ public sealed class Domain(
         return caseProvider.GetCases(getCasesRequest.CustomerPpid);
     }
 
+    // Implement the AddCase method to add a new legal case to the system
+    // Get the policy for the customer and check if the coverage is active before adding the case
     public void AddCase(LegalCase legalCase)
     {
-        caseProvider.AddCase(legalCase);
+
     }
 
-    public IEnumerable<ContractDisputeCase> GetDutchContractDisputeCases()
-    {
-        return caseProvider.GetDutchContractDisputeCases();
-    }
-
-    public void DecideCoverage(string caseName, CoverageStatus decision)
+    public void UpdateCoverage(string caseName, CoverageStatus decision)
     {
         caseProvider.UpdateCoverage(caseName, decision);
     }
@@ -55,7 +52,7 @@ public sealed class Domain(
             RelationId = policy.RelationId,
             StartDate = policy.StartDate,
             EndDate = policy.EndDate,
-            Coverage = policy.Coverage.ToString()
+            CoverageType = policy.CoverageType.ToString()
         };
     }
 }

@@ -30,13 +30,12 @@ public sealed class CaseController(
     [HttpPost(nameof(AddCase))]
     public void AddCase(AddCaseRequest request)
     {
-        var domainRequest = AddCaseRequestMapper.Map(request);
-        caseDomain.AddCase(domainRequest);
+
     }
 
-    [HttpPost(nameof(DecideCase))]
-    public void DecideCase(DecideCoverageRequest request)
+    [HttpPost(nameof(UpdateCoverage))]
+    public void UpdateCoverage(UpdateCoverageRequest request)
     {
-        caseDomain.DecideCoverage(request.CaseName, (DomainModel.CoverageStatus)request.Decision);
+        caseDomain.UpdateCoverage(request.CaseName, (DomainModel.CoverageStatus)request.Decision);
     }
 }

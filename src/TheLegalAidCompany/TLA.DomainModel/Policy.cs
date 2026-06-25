@@ -6,5 +6,5 @@ public class Policy
     public int RelationId { get; set; }
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
-    public string Coverage { get; set; }
+    public string CoverageType { get; set; }
 }

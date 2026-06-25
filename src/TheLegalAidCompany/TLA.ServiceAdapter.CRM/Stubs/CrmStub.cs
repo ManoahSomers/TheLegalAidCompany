@@ -49,7 +49,7 @@ public static class CrmStub
                 RelationId = 1,
                 StartDate = DateTime.Now.AddMonths(-6),
                 EndDate = DateTime.Now.AddMonths(6),
-                Coverage = Coverages.FamilyLaw
+                CoverageType = CoverageTypes.FamilyLaw
             },
             new Policy
             {
@@ -57,7 +57,7 @@ public static class CrmStub
                 RelationId = 2,
                 StartDate = DateTime.Now.AddMonths(-3),
                 EndDate = DateTime.Now.AddMonths(9),
-                Coverage = Coverages.ContractDispute
+                CoverageType = CoverageTypes.ContractDispute
             },
             new Policy
             {
@@ -65,7 +65,7 @@ public static class CrmStub
                 RelationId = 3,
                 StartDate = DateTime.Now.AddMonths(-1),
                 EndDate = DateTime.Now.AddMonths(11),
-                Coverage = Coverages.LaborLaw
+                CoverageType = CoverageTypes.LaborLaw
             }
         };
     }

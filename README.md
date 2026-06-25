@@ -56,6 +56,25 @@ Base route pattern: `api/[controller]/[action]`
 - `GET /api/Relation/GetPolicy`
   - Returns policy details from CRM stub
 
+## Authenticating requests
+
+All endpoints except `POST /api/Auth/GenerateToken` require a JWT bearer token.
+
+**Steps:**
+
+1. Call `POST /api/Auth/GenerateToken` with a valid PPID integer as the request body to receive a token.
+2. Pass the token as a `Bearer` token in the `Authorization` header of every subsequent request (Swagger handles this automatically via the **Authorize** button).
+
+**Valid customer PPIDs (CRM stub)**
+
+| PPID | Name | Coverage type |
+|------|------|---------------|
+| `1` | J.D. Smith | FamilyLaw |
+| `2` | A.B. Doe | ContractDispute |
+| `3` | C.E. Johnson | LaborLaw |
+
+> PPIDs outside this list will result in a `FunctionalException` from the CRM stub.
+
 ## Build and run
 
 From [src/TheLegalAidCompany/](src/TheLegalAidCompany/):

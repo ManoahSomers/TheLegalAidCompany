@@ -4,9 +4,6 @@ using TLA.ServiceAdapter.Cases.Stubs;
 
 namespace TLA.ServiceAdapter.Cases;
 
-/// <summary>
-/// DO NOT MODIFY. The Provider simply mocs a database for the purpose of this test.
-/// </summary>
 public sealed class CaseProvider : ICaseProvider
 {
     public void AddCase(DomainModel.LegalCase legalCase)

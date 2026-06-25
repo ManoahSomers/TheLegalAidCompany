@@ -10,3 +10,4 @@ Src/.vs/
 *.orig
 src/TheInsuranceCompany/.vs/
 interview/
+src/TheLegalAidCompany/.vs/*
